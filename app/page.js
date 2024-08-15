@@ -35,12 +35,15 @@ export default function Home() {
           </Stack>
           </Paper>
         ) : (
+          <Paper square={false} sx={{backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: 4, borderRadius: '16px',  }}> 
           <Stack direction={'column'} alignContent={'center'} alignItems={'center'}>
             <Typography variant='h4' color={'black'}>Thanks for signing up!</Typography>
             <Typography variant='h6' color={'black'}>You may now leave this page.</Typography>
           </Stack>
+          </Paper>
         )}
       </Box>
     </Box>
+          
   );
 }
